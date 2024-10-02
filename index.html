@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digitális Képkeret</title>
+    <link rel="stylesheet" href="/src/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Digitális Képkeret</h1>
+        <div id="urlDisplay" class="bg-primary text-white p-2 mb-3">
+          A teszteléshez használt link url-je: <br><br><span id="urlText">https://mlpnk72yciwc.i.optimole.com/cqhiHLc.IIZS~2ef73/w:auto/h:auto/q:75/https://bleedingcool.com/wp-content/uploads/2022/12/rms600cap-1.jpg</span>
+        </div>
+        <form id="frameForm" class="row g-3">
+            <div class="col-md-6">
+                <label for="imageUrl" class="form-label">Kép URL-je</label>
+                <input type="text" class="form-control" id="imageUrl">
+            </div>
+            <div class="col-md-6">
+                <label for="imageWidth" class="form-label">Kép szélessége (px)</label>
+                <input type="number" class="form-control" id="imageWidth">
+            </div>
+            <div class="col-md-6">
+                <label for="frameThickness" class="form-label">Képkeret vastagsága (px)</label>
+                <input type="number" class="form-control" id="frameThickness">
+            </div>
+            <div class="col-md-6">
+                <label for="frameColor" class="form-label">Képkeret színe</label>
+                <input type="color" class="form-control" id="frameColor">
+            </div>
+        </form>
+        <div class="mt-3 text-center">
+            <img id="imagePreview" alt="Kép előnézet" class="img-fluid">
+        </div>
+    </div>
+    <footer class="container mt-5 text-center">
+        <p>Csillag Csaba, 2/14/S</p>
+        <button id="toggleMode" class="btn btn-secondary">Sötét/Világos mód</button>
+    </footer>
+    <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
